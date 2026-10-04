@@ -2,8 +2,6 @@ import { PortfolioSection } from '@/components/portfolio-section'
 
 const skills = ['Java', 'Python', 'SQL', 'HTML', 'CSS', 'Git']
 
-const projects = ['AI Job Match Analyzer', 'Image Classification Project']
-
 const contacts = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/thomas-carsonn' },
   { label: 'GitHub', href: 'https://github.com/CharlieH1102' },
@@ -12,7 +10,7 @@ const contacts = [
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#0a1f44] text-slate-100">
+    <main className="min-h-screen bg-[#071633] text-slate-100">
       <div className="mx-auto max-w-2xl px-6 py-16 md:py-24">
         <header className="pb-10">
           <h1 className="text-balance text-4xl font-bold tracking-tight text-white md:text-5xl">
@@ -46,19 +44,6 @@ export default function Page() {
           </ul>
         </PortfolioSection>
 
-        <PortfolioSection id="projects" title="Featured Projects">
-          <ul className="flex flex-col gap-3">
-            {projects.map((project) => (
-              <li
-                key={project}
-                className="rounded-lg border border-white/10 bg-white/5 px-5 py-4 font-medium text-white"
-              >
-                {project}
-              </li>
-            ))}
-          </ul>
-        </PortfolioSection>
-
         <PortfolioSection id="contact" title="Contact">
           <ul className="flex flex-wrap gap-3">
             {contacts.map((contact) => {
@@ -70,7 +55,7 @@ export default function Page() {
                     {...(isExternal
                       ? { target: '_blank', rel: 'noopener noreferrer' }
                       : {})}
-                    className="inline-block rounded-md bg-sky-300 px-5 py-2 text-sm font-semibold text-[#0a1f44] transition-colors hover:bg-sky-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-200"
+                    className="inline-block rounded-md bg-sky-300 px-5 py-2 text-sm font-semibold text-[#071633] transition-colors hover:bg-sky-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-200"
                   >
                     {contact.label}
                   </a>
