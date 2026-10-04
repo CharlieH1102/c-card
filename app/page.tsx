@@ -5,8 +5,9 @@ const skills = ['Java', 'Python', 'SQL', 'HTML', 'CSS', 'Git']
 const contacts = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/thomas-carsonn' },
   { label: 'GitHub', href: 'https://github.com/CharlieH1102' },
-  { label: 'Email', href: 'mailto:alexander26th@outlook.com' },
 ]
+
+const email = 'alexander26th@outlook.com'
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
           </h1>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-slate-300">
             Computer Science student at the University of Houston&ndash;Clear
-            Lake with experience in Java, Python, SQL, HTML, and CSS.
+            Lake with foundation in Java, Python, SQL, HTML, and CSS.
           </p>
         </header>
 
@@ -27,7 +28,7 @@ export default function Page() {
             I&apos;m interested in software engineering and artificial
             intelligence. I enjoy building practical applications and am
             currently developing my skills in machine learning, data analysis,
-            and full-stack development.
+            and software development.
           </p>
         </PortfolioSection>
 
@@ -63,6 +64,12 @@ export default function Page() {
               )
             })}
           </ul>
+          <a
+            href={`mailto:${email}`}
+            className="mt-4 inline-block text-slate-300 underline-offset-4 transition-colors hover:text-sky-200 hover:underline"
+          >
+            {email}
+          </a>
         </PortfolioSection>
       </div>
     </main>
