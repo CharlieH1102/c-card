@@ -19,7 +19,7 @@ export default function Page() {
           </h1>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-slate-300">
             Computer Science student at the University of Houston&ndash;Clear
-            Lake with foundation in Java, Python, SQL, HTML, and CSS.
+            Lake with a foundation in Java, Python, SQL, HTML, and CSS.
           </p>
         </header>
 
